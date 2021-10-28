@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/dex\/feature\/getCustomerNumber[1.1:22]","start":1634898041073,"end":1634898044066,"title":"src\/test\/java\/dex\/feature\/getCustomerNumber[1.1:22] 06:20:41.073-06:20:44.066 Validate get customer details for given Claim ID : 510377"},{"id":2,"group":1,"content":"src\/test\/java\/dex\/feature\/getCustomerNumber[1.2:23]","start":1634898044075,"end":1634898044271,"title":"src\/test\/java\/dex\/feature\/getCustomerNumber[1.2:23] 06:20:44.075-06:20:44.271 Validate get customer details for given Claim ID : 510977"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

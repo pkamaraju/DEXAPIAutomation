@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>dex.feature.getCustomerNumber</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-10-22 08:21:17 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:22]"><span>[1.1:22]</span> <span>Validate get customer details for given Claim ID : 510377</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:23]"><span>[1.2:23]</span> <span>Validate get customer details for given Claim ID : 510977</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">dex/feature/getCustomerNumber.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Fetching Customer details through GET call in wfl-claims-rs Core Services</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:22]</span>
+                <span class="scenario-name">Validate get customer details for given Claim ID : 510377</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>863</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;customercore-rs/v1/customers/details?customerNumber=510377&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">713</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">08:21:17.190 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:21:17.532 response time in milliseconds: 296
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; X-Paging-Limit: 10
+1 &lt; X-Paging-Offset: 0
+1 &lt; X-Total-Count: 1
+1 &lt; Date: Fri, 22 Oct 2021 12:21:17 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+[{&quot;addresses&quot;:[{&quot;temporary&quot;:false,&quot;city&quot;:&quot;Walnut Creek&quot;,&quot;postalCode&quot;:&quot;94596&quot;,&quot;latitude&quot;:null,&quot;countryCd&quot;:&quot;US&quot;,&quot;county&quot;:null,&quot;accuracy&quot;:null,&quot;contactType&quot;:&quot;residence&quot;,&quot;referenceId&quot;:null,&quot;effectiveTo&quot;:null,&quot;duration&quot;:null,&quot;subdivision&quot;:null,&quot;extensionFields&quot;:{},&quot;validationIndicator&quot;:null,&quot;stateProvCd&quot;:&quot;CA&quot;,&quot;addressLine1&quot;:&quot;Address97144281&quot;,&quot;addressLine2&quot;:&quot;&quot;,&quot;id&quot;:7905231,&quot;addressLine3&quot;:&quot;&quot;,&quot;contactMethod&quot;:&quot;ADDRESS&quot;,&quot;longitude&quot;:null,&quot;inCareOf&quot;:null,&quot;preferredInd&quot;:null,&quot;communicationPreferences&quot;:[],&quot;attention&quot;:null,&quot;comment&quot;:null,&quot;doNotSolicitInd&quot;:null,&quot;effectiveFrom&quot;:null}],&quot;preferredSpokenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;registeredOnline&quot;:false,&quot;individualDetails&quot;:{&quot;lastName&quot;:&quot;Smith09877373&quot;,&quot;associateEmployments&quot;:false,&quot;designationDescription&quot;:null,&quot;deceased&quot;:false,&quot;occupationDescription&quot;:null,&quot;title&quot;:null,&quot;suffix&quot;:null,&quot;associateBusinessEntity&quot;:false,&quot;extensionFields&quot;:{},&quot;genderCd&quot;:&quot;male&quot;,&quot;nickname&quot;:null,&quot;deathDate&quot;:null,&quot;associateProviders&quot;:false,&quot;occupationCd&quot;:null,&quot;designationCd&quot;:null,&quot;birthDate&quot;:&quot;1995-09-02&quot;,&quot;firstName&quot;:&quot;John87780675&quot;,&quot;deathNotificationReceived&quot;:false,&quot;disabilities&quot;:[],&quot;maritalStatusCd&quot;:null,&quot;taxId&quot;:&quot;046-42-2369&quot;,&quot;citizenshipCd&quot;:null,&quot;tobaccoCd&quot;:&quot;YES&quot;,&quot;middleName&quot;:&quot;&quot;,&quot;interests&quot;:[]},&quot;majorAccount&quot;:null,&quot;lastUpdateDate&quot;:&quot;2020-09-02T08:44:02.380Z&quot;,&quot;preferredCurrency&quot;:null,&quot;phones&quot;:[],&quot;sourceCd&quot;:&quot;UNKNOWN&quot;,&quot;socialNets&quot;:[],&quot;rateDatePayment&quot;:null,&quot;businessCustomerAdditionalNames&quot;:null,&quot;segments&quot;:[],&quot;customerStatus&quot;:&quot;CUSTOMER&quot;,&quot;emails&quot;:[],&quot;webAddresses&quot;:[],&quot;specialClaimReview&quot;:false,&quot;archived&quot;:false,&quot;customerType&quot;:&quot;INDV&quot;,&quot;sourceOfExchangeRate&quot;:null,&quot;extensionFields&quot;:{},&quot;groupInfo&quot;:[],&quot;preferredWrittenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;customerEmployments&quot;:null,&quot;paperless&quot;:false,&quot;agencies&quot;:[],&quot;indCustomerAdditionalNames&quot;:[],&quot;businessDetails&quot;:null,&quot;customerNumber&quot;:&quot;510377&quot;,&quot;accountNumber&quot;:&quot;610377&quot;,&quot;genericRelationships&quot;:[],&quot;displayValue&quot;:&quot;John87780675 Smith09877373&quot;,&quot;ratingCd&quot;:&quot;UNKNOWN&quot;,&quot;preferredContactMethod&quot;:null,&quot;navigationLinks&quot;:[],&quot;chats&quot;:[],&quot;rateDateIntake&quot;:null,&quot;brandCd&quot;:null,&quot;providers&quot;:null}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">08:21:17.554 [print] [
+  {
+    &quot;addresses&quot;: [
+      {
+        &quot;temporary&quot;: false,
+        &quot;city&quot;: &quot;Walnut Creek&quot;,
+        &quot;postalCode&quot;: &quot;94596&quot;,
+        &quot;latitude&quot;: null,
+        &quot;countryCd&quot;: &quot;US&quot;,
+        &quot;county&quot;: null,
+        &quot;accuracy&quot;: null,
+        &quot;contactType&quot;: &quot;residence&quot;,
+        &quot;referenceId&quot;: null,
+        &quot;effectiveTo&quot;: null,
+        &quot;duration&quot;: null,
+        &quot;subdivision&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;validationIndicator&quot;: null,
+        &quot;stateProvCd&quot;: &quot;CA&quot;,
+        &quot;addressLine1&quot;: &quot;Address97144281&quot;,
+        &quot;addressLine2&quot;: &quot;&quot;,
+        &quot;id&quot;: 7905231,
+        &quot;addressLine3&quot;: &quot;&quot;,
+        &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+        &quot;longitude&quot;: null,
+        &quot;inCareOf&quot;: null,
+        &quot;preferredInd&quot;: null,
+        &quot;communicationPreferences&quot;: [
+        ],
+        &quot;attention&quot;: null,
+        &quot;comment&quot;: null,
+        &quot;doNotSolicitInd&quot;: null,
+        &quot;effectiveFrom&quot;: null
+      }
+    ],
+    &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;registeredOnline&quot;: false,
+    &quot;individualDetails&quot;: {
+      &quot;lastName&quot;: &quot;Smith09877373&quot;,
+      &quot;associateEmployments&quot;: false,
+      &quot;designationDescription&quot;: null,
+      &quot;deceased&quot;: false,
+      &quot;occupationDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;suffix&quot;: null,
+      &quot;associateBusinessEntity&quot;: false,
+      &quot;extensionFields&quot;: {
+      },
+      &quot;genderCd&quot;: &quot;male&quot;,
+      &quot;nickname&quot;: null,
+      &quot;deathDate&quot;: null,
+      &quot;associateProviders&quot;: false,
+      &quot;occupationCd&quot;: null,
+      &quot;designationCd&quot;: null,
+      &quot;birthDate&quot;: &quot;1995-09-02&quot;,
+      &quot;firstName&quot;: &quot;John87780675&quot;,
+      &quot;deathNotificationReceived&quot;: false,
+      &quot;disabilities&quot;: [
+      ],
+      &quot;maritalStatusCd&quot;: null,
+      &quot;taxId&quot;: &quot;046-42-2369&quot;,
+      &quot;citizenshipCd&quot;: null,
+      &quot;tobaccoCd&quot;: &quot;YES&quot;,
+      &quot;middleName&quot;: &quot;&quot;,
+      &quot;interests&quot;: [
+      ]
+    },
+    &quot;majorAccount&quot;: null,
+    &quot;lastUpdateDate&quot;: &quot;2020-09-02T08:44:02.380Z&quot;,
+    &quot;preferredCurrency&quot;: null,
+    &quot;phones&quot;: [
+    ],
+    &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;socialNets&quot;: [
+    ],
+    &quot;rateDatePayment&quot;: null,
+    &quot;businessCustomerAdditionalNames&quot;: null,
+    &quot;segments&quot;: [
+    ],
+    &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+    &quot;emails&quot;: [
+    ],
+    &quot;webAddresses&quot;: [
+    ],
+    &quot;specialClaimReview&quot;: false,
+    &quot;archived&quot;: false,
+    &quot;customerType&quot;: &quot;INDV&quot;,
+    &quot;sourceOfExchangeRate&quot;: null,
+    &quot;extensionFields&quot;: {
+    },
+    &quot;groupInfo&quot;: [
+    ],
+    &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;customerEmployments&quot;: null,
+    &quot;paperless&quot;: false,
+    &quot;agencies&quot;: [
+    ],
+    &quot;indCustomerAdditionalNames&quot;: [
+    ],
+    &quot;businessDetails&quot;: null,
+    &quot;customerNumber&quot;: &quot;510377&quot;,
+    &quot;accountNumber&quot;: &quot;610377&quot;,
+    &quot;genericRelationships&quot;: [
+    ],
+    &quot;displayValue&quot;: &quot;John87780675 Smith09877373&quot;,
+    &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;preferredContactMethod&quot;: null,
+    &quot;navigationLinks&quot;: [
+    ],
+    &quot;chats&quot;: [
+    ],
+    &quot;rateDateIntake&quot;: null,
+    &quot;brandCd&quot;: null,
+    &quot;providers&quot;: null
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">08:21:17.559 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerNumber == &#39;510377&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerType == &#39;INDV&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].accountNumber == &#39;610377&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerStatus == &#39;CUSTOMER&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:23]</span>
+                <span class="scenario-name">Validate get customer details for given Claim ID : 510977</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>205</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;customercore-rs/v1/customers/details?customerNumber=510977&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">191</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.10">08:21:17.616 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:21:17.802 response time in milliseconds: 183
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; X-Paging-Limit: 10
+1 &lt; X-Paging-Offset: 0
+1 &lt; X-Total-Count: 1
+1 &lt; Date: Fri, 22 Oct 2021 12:21:18 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+[{&quot;addresses&quot;:[{&quot;temporary&quot;:false,&quot;city&quot;:&quot;Test&quot;,&quot;postalCode&quot;:&quot;10928&quot;,&quot;latitude&quot;:null,&quot;countryCd&quot;:&quot;US&quot;,&quot;county&quot;:null,&quot;accuracy&quot;:null,&quot;contactType&quot;:&quot;residence&quot;,&quot;referenceId&quot;:null,&quot;effectiveTo&quot;:null,&quot;duration&quot;:null,&quot;subdivision&quot;:null,&quot;extensionFields&quot;:{},&quot;validationIndicator&quot;:null,&quot;stateProvCd&quot;:&quot;GA&quot;,&quot;addressLine1&quot;:&quot;test lane&quot;,&quot;addressLine2&quot;:&quot;&quot;,&quot;id&quot;:30641766,&quot;addressLine3&quot;:&quot;&quot;,&quot;contactMethod&quot;:&quot;ADDRESS&quot;,&quot;longitude&quot;:null,&quot;inCareOf&quot;:null,&quot;preferredInd&quot;:null,&quot;communicationPreferences&quot;:[],&quot;attention&quot;:null,&quot;comment&quot;:null,&quot;doNotSolicitInd&quot;:null,&quot;effectiveFrom&quot;:null}],&quot;preferredSpokenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;registeredOnline&quot;:false,&quot;individualDetails&quot;:{&quot;lastName&quot;:&quot;Miller&quot;,&quot;associateEmployments&quot;:false,&quot;designationDescription&quot;:null,&quot;deceased&quot;:false,&quot;occupationDescription&quot;:null,&quot;title&quot;:null,&quot;suffix&quot;:null,&quot;associateBusinessEntity&quot;:false,&quot;extensionFields&quot;:{},&quot;genderCd&quot;:&quot;male&quot;,&quot;nickname&quot;:null,&quot;deathDate&quot;:null,&quot;associateProviders&quot;:false,&quot;occupationCd&quot;:null,&quot;designationCd&quot;:null,&quot;birthDate&quot;:null,&quot;firstName&quot;:&quot;John&quot;,&quot;deathNotificationReceived&quot;:false,&quot;disabilities&quot;:[],&quot;maritalStatusCd&quot;:null,&quot;taxId&quot;:&quot;109-12-9289&quot;,&quot;citizenshipCd&quot;:null,&quot;tobaccoCd&quot;:null,&quot;middleName&quot;:&quot;&quot;,&quot;interests&quot;:[]},&quot;majorAccount&quot;:null,&quot;lastUpdateDate&quot;:&quot;2020-11-30T22:36:30.737Z&quot;,&quot;preferredCurrency&quot;:null,&quot;phones&quot;:[],&quot;sourceCd&quot;:&quot;UNKNOWN&quot;,&quot;socialNets&quot;:[],&quot;rateDatePayment&quot;:null,&quot;businessCustomerAdditionalNames&quot;:null,&quot;segments&quot;:[],&quot;customerStatus&quot;:&quot;CUSTOMER&quot;,&quot;emails&quot;:[],&quot;webAddresses&quot;:[],&quot;specialClaimReview&quot;:false,&quot;archived&quot;:false,&quot;customerType&quot;:&quot;INDV&quot;,&quot;sourceOfExchangeRate&quot;:null,&quot;extensionFields&quot;:{},&quot;groupInfo&quot;:[],&quot;preferredWrittenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;customerEmployments&quot;:null,&quot;paperless&quot;:false,&quot;agencies&quot;:[],&quot;indCustomerAdditionalNames&quot;:[],&quot;businessDetails&quot;:null,&quot;customerNumber&quot;:&quot;510977&quot;,&quot;accountNumber&quot;:&quot;610977&quot;,&quot;genericRelationships&quot;:[],&quot;displayValue&quot;:&quot;John Miller&quot;,&quot;ratingCd&quot;:&quot;UNKNOWN&quot;,&quot;preferredContactMethod&quot;:null,&quot;navigationLinks&quot;:[],&quot;chats&quot;:[],&quot;rateDateIntake&quot;:null,&quot;brandCd&quot;:null,&quot;providers&quot;:null}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.12">08:21:17.807 [print] [
+  {
+    &quot;addresses&quot;: [
+      {
+        &quot;temporary&quot;: false,
+        &quot;city&quot;: &quot;Test&quot;,
+        &quot;postalCode&quot;: &quot;10928&quot;,
+        &quot;latitude&quot;: null,
+        &quot;countryCd&quot;: &quot;US&quot;,
+        &quot;county&quot;: null,
+        &quot;accuracy&quot;: null,
+        &quot;contactType&quot;: &quot;residence&quot;,
+        &quot;referenceId&quot;: null,
+        &quot;effectiveTo&quot;: null,
+        &quot;duration&quot;: null,
+        &quot;subdivision&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;validationIndicator&quot;: null,
+        &quot;stateProvCd&quot;: &quot;GA&quot;,
+        &quot;addressLine1&quot;: &quot;test lane&quot;,
+        &quot;addressLine2&quot;: &quot;&quot;,
+        &quot;id&quot;: 30641766,
+        &quot;addressLine3&quot;: &quot;&quot;,
+        &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+        &quot;longitude&quot;: null,
+        &quot;inCareOf&quot;: null,
+        &quot;preferredInd&quot;: null,
+        &quot;communicationPreferences&quot;: [
+        ],
+        &quot;attention&quot;: null,
+        &quot;comment&quot;: null,
+        &quot;doNotSolicitInd&quot;: null,
+        &quot;effectiveFrom&quot;: null
+      }
+    ],
+    &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;registeredOnline&quot;: false,
+    &quot;individualDetails&quot;: {
+      &quot;lastName&quot;: &quot;Miller&quot;,
+      &quot;associateEmployments&quot;: false,
+      &quot;designationDescription&quot;: null,
+      &quot;deceased&quot;: false,
+      &quot;occupationDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;suffix&quot;: null,
+      &quot;associateBusinessEntity&quot;: false,
+      &quot;extensionFields&quot;: {
+      },
+      &quot;genderCd&quot;: &quot;male&quot;,
+      &quot;nickname&quot;: null,
+      &quot;deathDate&quot;: null,
+      &quot;associateProviders&quot;: false,
+      &quot;occupationCd&quot;: null,
+      &quot;designationCd&quot;: null,
+      &quot;birthDate&quot;: null,
+      &quot;firstName&quot;: &quot;John&quot;,
+      &quot;deathNotificationReceived&quot;: false,
+      &quot;disabilities&quot;: [
+      ],
+      &quot;maritalStatusCd&quot;: null,
+      &quot;taxId&quot;: &quot;109-12-9289&quot;,
+      &quot;citizenshipCd&quot;: null,
+      &quot;tobaccoCd&quot;: null,
+      &quot;middleName&quot;: &quot;&quot;,
+      &quot;interests&quot;: [
+      ]
+    },
+    &quot;majorAccount&quot;: null,
+    &quot;lastUpdateDate&quot;: &quot;2020-11-30T22:36:30.737Z&quot;,
+    &quot;preferredCurrency&quot;: null,
+    &quot;phones&quot;: [
+    ],
+    &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;socialNets&quot;: [
+    ],
+    &quot;rateDatePayment&quot;: null,
+    &quot;businessCustomerAdditionalNames&quot;: null,
+    &quot;segments&quot;: [
+    ],
+    &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+    &quot;emails&quot;: [
+    ],
+    &quot;webAddresses&quot;: [
+    ],
+    &quot;specialClaimReview&quot;: false,
+    &quot;archived&quot;: false,
+    &quot;customerType&quot;: &quot;INDV&quot;,
+    &quot;sourceOfExchangeRate&quot;: null,
+    &quot;extensionFields&quot;: {
+    },
+    &quot;groupInfo&quot;: [
+    ],
+    &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;customerEmployments&quot;: null,
+    &quot;paperless&quot;: false,
+    &quot;agencies&quot;: [
+    ],
+    &quot;indCustomerAdditionalNames&quot;: [
+    ],
+    &quot;businessDetails&quot;: null,
+    &quot;customerNumber&quot;: &quot;510977&quot;,
+    &quot;accountNumber&quot;: &quot;610977&quot;,
+    &quot;genericRelationships&quot;: [
+    ],
+    &quot;displayValue&quot;: &quot;John Miller&quot;,
+    &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;preferredContactMethod&quot;: null,
+    &quot;navigationLinks&quot;: [
+    ],
+    &quot;chats&quot;: [
+    ],
+    &quot;rateDateIntake&quot;: null,
+    &quot;brandCd&quot;: null,
+    &quot;providers&quot;: null
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">08:21:17.811 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerNumber == &#39;510977&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerType == &#39;INDV&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].accountNumber == &#39;610977&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerStatus == &#39;CUSTOMER&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: dex/feature/getCustomerNumber.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>22 Oct 2021, 08:26</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">dex/feature/getCustomerNumber.feature</td>
+                    <td      class="passed"    >22</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">22</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="1107234395">1s 107ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">dex/feature/getCustomerNumber.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Fetching Customer details through GET call in wfl-claims-rs Core Services</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">065ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = call read('basic-auth.js')</span>
+  
+  <span class="lead-duration duration">064ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_smoke.html">@smoke</a>
+      </div>
+
+  
+  <span class="lead-duration duration">890ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate get customer details for given Claim ID : 510377</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'customercore-rs/v1/customers/details?customerNumber=510377'</span>
+  
+  <span class="lead-duration duration">018ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">800ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>08:26:46.915 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:26:47.241 response time in milliseconds: 276
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; X-Paging-Limit: 10
+1 &lt; X-Paging-Offset: 0
+1 &lt; X-Total-Count: 1
+1 &lt; Date: Fri, 22 Oct 2021 12:26:47 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+[{&quot;addresses&quot;:[{&quot;temporary&quot;:false,&quot;city&quot;:&quot;Walnut Creek&quot;,&quot;postalCode&quot;:&quot;94596&quot;,&quot;latitude&quot;:null,&quot;countryCd&quot;:&quot;US&quot;,&quot;county&quot;:null,&quot;accuracy&quot;:null,&quot;contactType&quot;:&quot;residence&quot;,&quot;referenceId&quot;:null,&quot;effectiveTo&quot;:null,&quot;duration&quot;:null,&quot;subdivision&quot;:null,&quot;extensionFields&quot;:{},&quot;validationIndicator&quot;:null,&quot;stateProvCd&quot;:&quot;CA&quot;,&quot;addressLine1&quot;:&quot;Address97144281&quot;,&quot;addressLine2&quot;:&quot;&quot;,&quot;id&quot;:7905231,&quot;addressLine3&quot;:&quot;&quot;,&quot;contactMethod&quot;:&quot;ADDRESS&quot;,&quot;longitude&quot;:null,&quot;inCareOf&quot;:null,&quot;preferredInd&quot;:null,&quot;communicationPreferences&quot;:[],&quot;attention&quot;:null,&quot;comment&quot;:null,&quot;doNotSolicitInd&quot;:null,&quot;effectiveFrom&quot;:null}],&quot;preferredSpokenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;registeredOnline&quot;:false,&quot;individualDetails&quot;:{&quot;lastName&quot;:&quot;Smith09877373&quot;,&quot;associateEmployments&quot;:false,&quot;designationDescription&quot;:null,&quot;deceased&quot;:false,&quot;occupationDescription&quot;:null,&quot;title&quot;:null,&quot;suffix&quot;:null,&quot;associateBusinessEntity&quot;:false,&quot;extensionFields&quot;:{},&quot;genderCd&quot;:&quot;male&quot;,&quot;nickname&quot;:null,&quot;deathDate&quot;:null,&quot;associateProviders&quot;:false,&quot;occupationCd&quot;:null,&quot;designationCd&quot;:null,&quot;birthDate&quot;:&quot;1995-09-02&quot;,&quot;firstName&quot;:&quot;John87780675&quot;,&quot;deathNotificationReceived&quot;:false,&quot;disabilities&quot;:[],&quot;maritalStatusCd&quot;:null,&quot;taxId&quot;:&quot;046-42-2369&quot;,&quot;citizenshipCd&quot;:null,&quot;tobaccoCd&quot;:&quot;YES&quot;,&quot;middleName&quot;:&quot;&quot;,&quot;interests&quot;:[]},&quot;majorAccount&quot;:null,&quot;lastUpdateDate&quot;:&quot;2020-09-02T08:44:02.380Z&quot;,&quot;preferredCurrency&quot;:null,&quot;phones&quot;:[],&quot;sourceCd&quot;:&quot;UNKNOWN&quot;,&quot;socialNets&quot;:[],&quot;rateDatePayment&quot;:null,&quot;businessCustomerAdditionalNames&quot;:null,&quot;segments&quot;:[],&quot;customerStatus&quot;:&quot;CUSTOMER&quot;,&quot;emails&quot;:[],&quot;webAddresses&quot;:[],&quot;specialClaimReview&quot;:false,&quot;archived&quot;:false,&quot;customerType&quot;:&quot;INDV&quot;,&quot;sourceOfExchangeRate&quot;:null,&quot;extensionFields&quot;:{},&quot;groupInfo&quot;:[],&quot;preferredWrittenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;customerEmployments&quot;:null,&quot;paperless&quot;:false,&quot;agencies&quot;:[],&quot;indCustomerAdditionalNames&quot;:[],&quot;businessDetails&quot;:null,&quot;customerNumber&quot;:&quot;510377&quot;,&quot;accountNumber&quot;:&quot;610377&quot;,&quot;genericRelationships&quot;:[],&quot;displayValue&quot;:&quot;John87780675 Smith09877373&quot;,&quot;ratingCd&quot;:&quot;UNKNOWN&quot;,&quot;preferredContactMethod&quot;:null,&quot;navigationLinks&quot;:[],&quot;chats&quot;:[],&quot;rateDateIntake&quot;:null,&quot;brandCd&quot;:null,&quot;providers&quot;:null}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">027ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>08:26:47.268 [print] [
+  {
+    &quot;addresses&quot;: [
+      {
+        &quot;temporary&quot;: false,
+        &quot;city&quot;: &quot;Walnut Creek&quot;,
+        &quot;postalCode&quot;: &quot;94596&quot;,
+        &quot;latitude&quot;: null,
+        &quot;countryCd&quot;: &quot;US&quot;,
+        &quot;county&quot;: null,
+        &quot;accuracy&quot;: null,
+        &quot;contactType&quot;: &quot;residence&quot;,
+        &quot;referenceId&quot;: null,
+        &quot;effectiveTo&quot;: null,
+        &quot;duration&quot;: null,
+        &quot;subdivision&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;validationIndicator&quot;: null,
+        &quot;stateProvCd&quot;: &quot;CA&quot;,
+        &quot;addressLine1&quot;: &quot;Address97144281&quot;,
+        &quot;addressLine2&quot;: &quot;&quot;,
+        &quot;id&quot;: 7905231,
+        &quot;addressLine3&quot;: &quot;&quot;,
+        &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+        &quot;longitude&quot;: null,
+        &quot;inCareOf&quot;: null,
+        &quot;preferredInd&quot;: null,
+        &quot;communicationPreferences&quot;: [
+        ],
+        &quot;attention&quot;: null,
+        &quot;comment&quot;: null,
+        &quot;doNotSolicitInd&quot;: null,
+        &quot;effectiveFrom&quot;: null
+      }
+    ],
+    &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;registeredOnline&quot;: false,
+    &quot;individualDetails&quot;: {
+      &quot;lastName&quot;: &quot;Smith09877373&quot;,
+      &quot;associateEmployments&quot;: false,
+      &quot;designationDescription&quot;: null,
+      &quot;deceased&quot;: false,
+      &quot;occupationDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;suffix&quot;: null,
+      &quot;associateBusinessEntity&quot;: false,
+      &quot;extensionFields&quot;: {
+      },
+      &quot;genderCd&quot;: &quot;male&quot;,
+      &quot;nickname&quot;: null,
+      &quot;deathDate&quot;: null,
+      &quot;associateProviders&quot;: false,
+      &quot;occupationCd&quot;: null,
+      &quot;designationCd&quot;: null,
+      &quot;birthDate&quot;: &quot;1995-09-02&quot;,
+      &quot;firstName&quot;: &quot;John87780675&quot;,
+      &quot;deathNotificationReceived&quot;: false,
+      &quot;disabilities&quot;: [
+      ],
+      &quot;maritalStatusCd&quot;: null,
+      &quot;taxId&quot;: &quot;046-42-2369&quot;,
+      &quot;citizenshipCd&quot;: null,
+      &quot;tobaccoCd&quot;: &quot;YES&quot;,
+      &quot;middleName&quot;: &quot;&quot;,
+      &quot;interests&quot;: [
+      ]
+    },
+    &quot;majorAccount&quot;: null,
+    &quot;lastUpdateDate&quot;: &quot;2020-09-02T08:44:02.380Z&quot;,
+    &quot;preferredCurrency&quot;: null,
+    &quot;phones&quot;: [
+    ],
+    &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;socialNets&quot;: [
+    ],
+    &quot;rateDatePayment&quot;: null,
+    &quot;businessCustomerAdditionalNames&quot;: null,
+    &quot;segments&quot;: [
+    ],
+    &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+    &quot;emails&quot;: [
+    ],
+    &quot;webAddresses&quot;: [
+    ],
+    &quot;specialClaimReview&quot;: false,
+    &quot;archived&quot;: false,
+    &quot;customerType&quot;: &quot;INDV&quot;,
+    &quot;sourceOfExchangeRate&quot;: null,
+    &quot;extensionFields&quot;: {
+    },
+    &quot;groupInfo&quot;: [
+    ],
+    &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;customerEmployments&quot;: null,
+    &quot;paperless&quot;: false,
+    &quot;agencies&quot;: [
+    ],
+    &quot;indCustomerAdditionalNames&quot;: [
+    ],
+    &quot;businessDetails&quot;: null,
+    &quot;customerNumber&quot;: &quot;510377&quot;,
+    &quot;accountNumber&quot;: &quot;610377&quot;,
+    &quot;genericRelationships&quot;: [
+    ],
+    &quot;displayValue&quot;: &quot;John87780675 Smith09877373&quot;,
+    &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;preferredContactMethod&quot;: null,
+    &quot;navigationLinks&quot;: [
+    ],
+    &quot;chats&quot;: [
+    ],
+    &quot;rateDateIntake&quot;: null,
+    &quot;brandCd&quot;: null,
+    &quot;providers&quot;: null
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print '=========Validating field values in response================= :'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>08:26:47.273 [print] =========Validating field values in response================= : 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].customerNumber == '510377'</span>
+  
+  <span class="lead-duration duration">037ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].customerType == 'INDV'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].accountNumber == '610377'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].customerStatus == 'CUSTOMER'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">006ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = call read('basic-auth.js')</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_smoke.html">@smoke</a>
+      </div>
+
+  
+  <span class="lead-duration duration">144ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate get customer details for given Claim ID : 510977</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'customercore-rs/v1/customers/details?customerNumber=510977'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">133ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>08:26:47.344 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+08:26:47.473 response time in milliseconds: 128
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; X-Paging-Limit: 10
+1 &lt; X-Paging-Offset: 0
+1 &lt; X-Total-Count: 1
+1 &lt; Date: Fri, 22 Oct 2021 12:26:47 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+[{&quot;addresses&quot;:[{&quot;temporary&quot;:false,&quot;city&quot;:&quot;Test&quot;,&quot;postalCode&quot;:&quot;10928&quot;,&quot;latitude&quot;:null,&quot;countryCd&quot;:&quot;US&quot;,&quot;county&quot;:null,&quot;accuracy&quot;:null,&quot;contactType&quot;:&quot;residence&quot;,&quot;referenceId&quot;:null,&quot;effectiveTo&quot;:null,&quot;duration&quot;:null,&quot;subdivision&quot;:null,&quot;extensionFields&quot;:{},&quot;validationIndicator&quot;:null,&quot;stateProvCd&quot;:&quot;GA&quot;,&quot;addressLine1&quot;:&quot;test lane&quot;,&quot;addressLine2&quot;:&quot;&quot;,&quot;id&quot;:30641766,&quot;addressLine3&quot;:&quot;&quot;,&quot;contactMethod&quot;:&quot;ADDRESS&quot;,&quot;longitude&quot;:null,&quot;inCareOf&quot;:null,&quot;preferredInd&quot;:null,&quot;communicationPreferences&quot;:[],&quot;attention&quot;:null,&quot;comment&quot;:null,&quot;doNotSolicitInd&quot;:null,&quot;effectiveFrom&quot;:null}],&quot;preferredSpokenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;registeredOnline&quot;:false,&quot;individualDetails&quot;:{&quot;lastName&quot;:&quot;Miller&quot;,&quot;associateEmployments&quot;:false,&quot;designationDescription&quot;:null,&quot;deceased&quot;:false,&quot;occupationDescription&quot;:null,&quot;title&quot;:null,&quot;suffix&quot;:null,&quot;associateBusinessEntity&quot;:false,&quot;extensionFields&quot;:{},&quot;genderCd&quot;:&quot;male&quot;,&quot;nickname&quot;:null,&quot;deathDate&quot;:null,&quot;associateProviders&quot;:false,&quot;occupationCd&quot;:null,&quot;designationCd&quot;:null,&quot;birthDate&quot;:null,&quot;firstName&quot;:&quot;John&quot;,&quot;deathNotificationReceived&quot;:false,&quot;disabilities&quot;:[],&quot;maritalStatusCd&quot;:null,&quot;taxId&quot;:&quot;109-12-9289&quot;,&quot;citizenshipCd&quot;:null,&quot;tobaccoCd&quot;:null,&quot;middleName&quot;:&quot;&quot;,&quot;interests&quot;:[]},&quot;majorAccount&quot;:null,&quot;lastUpdateDate&quot;:&quot;2020-11-30T22:36:30.737Z&quot;,&quot;preferredCurrency&quot;:null,&quot;phones&quot;:[],&quot;sourceCd&quot;:&quot;UNKNOWN&quot;,&quot;socialNets&quot;:[],&quot;rateDatePayment&quot;:null,&quot;businessCustomerAdditionalNames&quot;:null,&quot;segments&quot;:[],&quot;customerStatus&quot;:&quot;CUSTOMER&quot;,&quot;emails&quot;:[],&quot;webAddresses&quot;:[],&quot;specialClaimReview&quot;:false,&quot;archived&quot;:false,&quot;customerType&quot;:&quot;INDV&quot;,&quot;sourceOfExchangeRate&quot;:null,&quot;extensionFields&quot;:{},&quot;groupInfo&quot;:[],&quot;preferredWrittenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;customerEmployments&quot;:null,&quot;paperless&quot;:false,&quot;agencies&quot;:[],&quot;indCustomerAdditionalNames&quot;:[],&quot;businessDetails&quot;:null,&quot;customerNumber&quot;:&quot;510977&quot;,&quot;accountNumber&quot;:&quot;610977&quot;,&quot;genericRelationships&quot;:[],&quot;displayValue&quot;:&quot;John Miller&quot;,&quot;ratingCd&quot;:&quot;UNKNOWN&quot;,&quot;preferredContactMethod&quot;:null,&quot;navigationLinks&quot;:[],&quot;chats&quot;:[],&quot;rateDateIntake&quot;:null,&quot;brandCd&quot;:null,&quot;providers&quot;:null}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>08:26:47.477 [print] [
+  {
+    &quot;addresses&quot;: [
+      {
+        &quot;temporary&quot;: false,
+        &quot;city&quot;: &quot;Test&quot;,
+        &quot;postalCode&quot;: &quot;10928&quot;,
+        &quot;latitude&quot;: null,
+        &quot;countryCd&quot;: &quot;US&quot;,
+        &quot;county&quot;: null,
+        &quot;accuracy&quot;: null,
+        &quot;contactType&quot;: &quot;residence&quot;,
+        &quot;referenceId&quot;: null,
+        &quot;effectiveTo&quot;: null,
+        &quot;duration&quot;: null,
+        &quot;subdivision&quot;: null,
+        &quot;extensionFields&quot;: {
+        },
+        &quot;validationIndicator&quot;: null,
+        &quot;stateProvCd&quot;: &quot;GA&quot;,
+        &quot;addressLine1&quot;: &quot;test lane&quot;,
+        &quot;addressLine2&quot;: &quot;&quot;,
+        &quot;id&quot;: 30641766,
+        &quot;addressLine3&quot;: &quot;&quot;,
+        &quot;contactMethod&quot;: &quot;ADDRESS&quot;,
+        &quot;longitude&quot;: null,
+        &quot;inCareOf&quot;: null,
+        &quot;preferredInd&quot;: null,
+        &quot;communicationPreferences&quot;: [
+        ],
+        &quot;attention&quot;: null,
+        &quot;comment&quot;: null,
+        &quot;doNotSolicitInd&quot;: null,
+        &quot;effectiveFrom&quot;: null
+      }
+    ],
+    &quot;preferredSpokenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;registeredOnline&quot;: false,
+    &quot;individualDetails&quot;: {
+      &quot;lastName&quot;: &quot;Miller&quot;,
+      &quot;associateEmployments&quot;: false,
+      &quot;designationDescription&quot;: null,
+      &quot;deceased&quot;: false,
+      &quot;occupationDescription&quot;: null,
+      &quot;title&quot;: null,
+      &quot;suffix&quot;: null,
+      &quot;associateBusinessEntity&quot;: false,
+      &quot;extensionFields&quot;: {
+      },
+      &quot;genderCd&quot;: &quot;male&quot;,
+      &quot;nickname&quot;: null,
+      &quot;deathDate&quot;: null,
+      &quot;associateProviders&quot;: false,
+      &quot;occupationCd&quot;: null,
+      &quot;designationCd&quot;: null,
+      &quot;birthDate&quot;: null,
+      &quot;firstName&quot;: &quot;John&quot;,
+      &quot;deathNotificationReceived&quot;: false,
+      &quot;disabilities&quot;: [
+      ],
+      &quot;maritalStatusCd&quot;: null,
+      &quot;taxId&quot;: &quot;109-12-9289&quot;,
+      &quot;citizenshipCd&quot;: null,
+      &quot;tobaccoCd&quot;: null,
+      &quot;middleName&quot;: &quot;&quot;,
+      &quot;interests&quot;: [
+      ]
+    },
+    &quot;majorAccount&quot;: null,
+    &quot;lastUpdateDate&quot;: &quot;2020-11-30T22:36:30.737Z&quot;,
+    &quot;preferredCurrency&quot;: null,
+    &quot;phones&quot;: [
+    ],
+    &quot;sourceCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;socialNets&quot;: [
+    ],
+    &quot;rateDatePayment&quot;: null,
+    &quot;businessCustomerAdditionalNames&quot;: null,
+    &quot;segments&quot;: [
+    ],
+    &quot;customerStatus&quot;: &quot;CUSTOMER&quot;,
+    &quot;emails&quot;: [
+    ],
+    &quot;webAddresses&quot;: [
+    ],
+    &quot;specialClaimReview&quot;: false,
+    &quot;archived&quot;: false,
+    &quot;customerType&quot;: &quot;INDV&quot;,
+    &quot;sourceOfExchangeRate&quot;: null,
+    &quot;extensionFields&quot;: {
+    },
+    &quot;groupInfo&quot;: [
+    ],
+    &quot;preferredWrittenLanguageCd&quot;: &quot;ENGLISH&quot;,
+    &quot;customerEmployments&quot;: null,
+    &quot;paperless&quot;: false,
+    &quot;agencies&quot;: [
+    ],
+    &quot;indCustomerAdditionalNames&quot;: [
+    ],
+    &quot;businessDetails&quot;: null,
+    &quot;customerNumber&quot;: &quot;510977&quot;,
+    &quot;accountNumber&quot;: &quot;610977&quot;,
+    &quot;genericRelationships&quot;: [
+    ],
+    &quot;displayValue&quot;: &quot;John Miller&quot;,
+    &quot;ratingCd&quot;: &quot;UNKNOWN&quot;,
+    &quot;preferredContactMethod&quot;: null,
+    &quot;navigationLinks&quot;: [
+    ],
+    &quot;chats&quot;: [
+    ],
+    &quot;rateDateIntake&quot;: null,
+    &quot;brandCd&quot;: null,
+    &quot;providers&quot;: null
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print '=========Validating field values in response================= :'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>08:26:47.478 [print] =========Validating field values in response================= : 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].customerNumber == '510977'</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].customerType == 'INDV'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].accountNumber == '610977'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response[0].customerStatus == 'CUSTOMER'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

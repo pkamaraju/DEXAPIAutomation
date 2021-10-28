@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: dex/feature/postEnrollmentServiceDuplicateStatus.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>27 Oct 2021, 09:47</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">dex/feature/postEnrollmentServiceDuplicateStatus.feature</td>
+                    <td      class="passed"    >14</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">14</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="119056000">119ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">dex/feature/postEnrollmentServiceDuplicateStatus.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Posting enrollment details through POST call in wfl-claims-rs Core Services</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">009ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = call read('basic-auth.js')</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def req_headers = {Content-Type: 'application/xml', X-Correlation-Id: '123456'}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def payload1 = read('classpath:dex/data/enrollmentService.xml')</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_reg.html">@reg</a>
+      </div>
+
+  
+  <span class="lead-duration duration">109ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate post enrollment service with duplicate status for given master policy number : MP0000783678</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set payload1 /EnrollmentCensusRequest/fileMetaData/masterPolicyNumber = 'MP0000783678'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/referenceID = 'MP0001042570:19'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request payload1</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">headers req_headers</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">102ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>09:47:29.468 request:
+1 &gt; POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Content-Type: application/xml; charset=UTF-8
+1 &gt; X-Correlation-Id: 123456
+1 &gt; Content-Length: 5182
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;EnrollmentCensusRequest&gt;
+    &lt;fileMetaData&gt;
+        &lt;masterPolicyNumber&gt;MP0000783678&lt;/masterPolicyNumber&gt;
+        &lt;participantCount&gt;1&lt;/participantCount&gt;
+        &lt;timestamp&gt;2021-04-16T00:00:01&lt;/timestamp&gt;
+        &lt;fileIdentifier&gt;None&lt;/fileIdentifier&gt;
+    &lt;/fileMetaData&gt;
+    &lt;enrollmentCensusRecords&gt;
+        &lt;referenceID&gt;MP0001042570:19&lt;/referenceID&gt;
+        &lt;certificate&gt;
+            &lt;effectiveDt&gt;2021-09-01T00:00:00&lt;/effectiveDt&gt;
+            &lt;coverages&gt;
+                &lt;participants&gt;
+                    &lt;personOID&gt;1&lt;/personOID&gt;
+                    &lt;roleName&gt;PRIMARY_P&lt;/roleName&gt;
+                    &lt;relationshipToInsured&gt;SELF&lt;/relationshipToInsured&gt;
+                &lt;/participants&gt;
+                &lt;memberPaymentModeCd&gt;12&lt;/memberPaymentModeCd&gt;
+                &lt;coverageCd&gt;accident_3&lt;/coverageCd&gt;
+                &lt;planCd&gt;plan_3&lt;/planCd&gt;
+                &lt;coverageTierCd&gt;
+                    &lt;tiersType&gt;EEF&lt;/tiersType&gt;
+                &lt;/coverageTierCd&gt;
+                &lt;enrollmentDt&gt;2021-01-01T00:00:00&lt;/enrollmentDt&gt;
+            &lt;/coverages&gt;
+            &lt;primaryParticipant&gt;
+                &lt;personOID&gt;1&lt;/personOID&gt;
+                &lt;relationship&gt;
+                    &lt;employment&gt;
+                        &lt;employeeId&gt;1&lt;/employeeId&gt;
+                        &lt;employmentStatus&gt;ACT&lt;/employmentStatus&gt;
+                        &lt;jobTitle&gt;Test&lt;/jobTitle&gt;
+                        &lt;originalHireDt&gt;2000-01-01T00:00:00&lt;/originalHireDt&gt;
+                        &lt;payrollFreq&gt;BIWEEKLY&lt;/payrollFreq&gt;
+                        &lt;salaryAmt&gt;10000.00&lt;/salaryAmt&gt;
+                        &lt;locationId&gt;001&lt;/locationId&gt;
+                    &lt;/employment&gt;
+                    &lt;classificationGroup&gt;
+                        &lt;code&gt;001&lt;/code&gt;
+                    &lt;/classificationGroup&gt;
+                &lt;/relationship&gt;
+            &lt;/primaryParticipant&gt;
+            &lt;enrollmentType&gt;ANNUAL&lt;/enrollmentType&gt;
+        &lt;/certificate&gt;
+        &lt;allParticipants&gt;
+            &lt;oid&gt;1&lt;/oid&gt;
+            &lt;firstName&gt;Person 1&lt;/firstName&gt;
+            &lt;lastName&gt;Test&lt;/lastName&gt;
+            &lt;middleName/&gt;
+            &lt;maritalStatusCd&gt;M&lt;/maritalStatusCd&gt;
+            &lt;gender&gt;MALE&lt;/gender&gt;
+            &lt;dob&gt;1958-01-01T00:00:00&lt;/dob&gt;
+            &lt;taxId&gt;000-00-0010&lt;/taxId&gt;
+            &lt;email/&gt;
+            &lt;addresses&gt;
+                &lt;addressType&gt;residence&lt;/addressType&gt;
+                &lt;addressLine1&gt;asd&lt;/addressLine1&gt;
+                &lt;addressLine2&gt; &lt;/addressLine2&gt;
+                &lt;zipCode&gt;11111&lt;/zipCode&gt;
+                &lt;city&gt;asd&lt;/city&gt;
+                &lt;state&gt;CO&lt;/state&gt;
+                &lt;country&gt;US&lt;/country&gt;
+            &lt;/addresses&gt;
+        &lt;/allParticipants&gt;
+    &lt;/enrollmentCensusRecords&gt;
+    &lt;enrollmentCensusRecords&gt;
+        &lt;referenceID&gt;MP0001042570::5&lt;/referenceID&gt;
+        &lt;certificate&gt;
+            &lt;effectiveDt&gt;2021-09-01T00:00:00&lt;/effectiveDt&gt;
+            &lt;coverages&gt;
+                &lt;participants&gt;
+                    &lt;personOID&gt;1&lt;/personOID&gt;
+                    &lt;roleName&gt;PRIMARY_P&lt;/roleName&gt;
+                    &lt;relationshipToInsured&gt;SELF&lt;/relationshipToInsured&gt;
+                &lt;/participants&gt;
+                &lt;memberPaymentModeCd&gt;12&lt;/memberPaymentModeCd&gt;
+                &lt;coverageCd&gt;accident_1&lt;/coverageCd&gt;
+                &lt;planCd&gt;plan_1&lt;/planCd&gt;
+                &lt;coverageTierCd&gt;
+                    &lt;tiersType&gt;EEF&lt;/tiersType&gt;
+                &lt;/coverageTierCd&gt;
+                &lt;enrollmentDt&gt;2021-01-01T00:00:00&lt;/enrollmentDt&gt;
+            &lt;/coverages&gt;
+            &lt;primaryParticipant&gt;
+                &lt;personOID&gt;1&lt;/personOID&gt;
+                &lt;relationship&gt;
+                    &lt;employment&gt;
+                        &lt;employeeId&gt;1&lt;/employeeId&gt;
+                        &lt;employmentStatus&gt;ACT&lt;/employmentStatus&gt;
+                        &lt;jobTitle&gt;1231234567899876543212345678909876543212345677889056896534232345677654335678&lt;/jobTitle&gt;
+                        &lt;originalHireDt&gt;2000-01-01T00:00:00&lt;/originalHireDt&gt;
+                        &lt;payrollFreq&gt;BIWEEKLY&lt;/payrollFreq&gt;
+                        &lt;salaryAmt&gt;10000.00&lt;/salaryAmt&gt;
+                    &lt;/employment&gt;
+                    &lt;classificationGroup&gt;
+                        &lt;code&gt;1&lt;/code&gt;
+                    &lt;/classificationGroup&gt;
+                &lt;/relationship&gt;
+            &lt;/primaryParticipant&gt;
+            &lt;enrollmentType&gt;ANNUAL&lt;/enrollmentType&gt;
+        &lt;/certificate&gt;
+        &lt;allParticipants&gt;
+            &lt;oid&gt;1&lt;/oid&gt;
+            &lt;firstName&gt;Person 5&lt;/firstName&gt;
+            &lt;lastName&gt;Test&lt;/lastName&gt;
+            &lt;middleName/&gt;
+            &lt;maritalStatusCd&gt;M&lt;/maritalStatusCd&gt;
+            &lt;gender&gt;MALE&lt;/gender&gt;
+            &lt;dob&gt;1958-01-01T00:00:00&lt;/dob&gt;
+            &lt;taxId&gt;000-22-0009&lt;/taxId&gt;
+            &lt;email/&gt;
+            &lt;addresses&gt;
+                &lt;addressType&gt;residence&lt;/addressType&gt;
+                &lt;addressLine1&gt;asd&lt;/addressLine1&gt;
+                &lt;addressLine2&gt; &lt;/addressLine2&gt;
+                &lt;zipCode&gt;11111&lt;/zipCode&gt;
+                &lt;city&gt;asd&lt;/city&gt;
+                &lt;state&gt;CO&lt;/state&gt;
+                &lt;country&gt;US&lt;/country&gt;
+            &lt;/addresses&gt;
+        &lt;/allParticipants&gt;
+    &lt;/enrollmentCensusRecords&gt;
+&lt;/EnrollmentCensusRequest&gt;
+
+09:47:29.563 response time in milliseconds: 94
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Wed, 27 Oct 2021 13:47:29 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;date&quot;:null,&quot;records&quot;:null,&quot;participantCount&quot;:null,&quot;policyNumber&quot;:&quot;MP0000783678&quot;,&quot;statusMessage&quot;:null}
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>09:47:29.565 [print] {
+  &quot;date&quot;: null,
+  &quot;records&quot;: null,
+  &quot;participantCount&quot;: null,
+  &quot;policyNumber&quot;: &quot;MP0000783678&quot;,
+  &quot;statusMessage&quot;: null
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print '=========Validating field values in response================= :'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>09:47:29.567 [print] =========Validating field values in response================= : 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.policyNumber == 'MP0000783678'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

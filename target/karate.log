@@ -1,0 +1,2813 @@
+10:23:14.637 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:23:14.652 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634912594644
+10:23:14.705 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 24 - ^Validate get customer details for given Claim ID \: .*$
+10:23:17.056 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5182
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570:20</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+10:23:17.308 [main] DEBUG com.intuit.karate - response time in milliseconds: 243
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 22 Oct 2021 14:23:17 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+10:23:17.320 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+10:23:17.323 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+10:23:18.590 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+10:23:30.454 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:23:30.466 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634912610459
+10:23:32.495 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5182
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570:20</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+10:23:32.665 [main] DEBUG com.intuit.karate - response time in milliseconds: 163
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 22 Oct 2021 14:23:32 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+10:23:32.679 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+10:23:32.683 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+10:23:33.668 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:dex/feature/postEnrollmentService.feature
+10:25:43.763 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:25:43.774 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634912743768
+10:25:43.810 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+10:25:45.243 [main] INFO  com.intuit.karate - [print] myId is: 87d01005-7b67-4789-8a55-b7dc60a7b84d 
+10:25:45.692 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5203
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>87d01005-7b67-4789-8a55-b7dc60a7b84d</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+10:25:45.894 [main] DEBUG com.intuit.karate - response time in milliseconds: 195
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 22 Oct 2021 14:25:46 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+10:25:45.898 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+10:25:45.900 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+10:25:46.868 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+10:29:03.236 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:29:03.248 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634912943242
+10:29:03.287 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+10:29:04.699 [main] INFO  com.intuit.karate - [print] Reference Id is: function(){ return java.lang.System.currentTimeMillis() + '' } 
+10:29:04.748 [main] ERROR com.intuit.karate - src/test/java/dex/feature/postEnrollmentService.feature:15
+* set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/referenceID = myId
+>>>> js failed:
+01: myId
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "myId" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/dex/feature/postEnrollmentService.feature:15
+10:29:05.694 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+10:29:27.282 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:29:27.294 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634912967287
+10:29:27.352 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+10:29:28.885 [main] INFO  com.intuit.karate - [print] Reference Id is: function(){ return java.lang.System.currentTimeMillis() + '' } 
+10:29:29.413 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5229
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>function(){ return java.lang.System.currentTimeMillis() + '' }</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+10:29:29.637 [main] DEBUG com.intuit.karate - response time in milliseconds: 212
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 22 Oct 2021 14:29:29 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+10:29:29.641 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+10:29:29.643 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+10:29:30.624 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+10:35:26.642 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:35:26.654 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634913326648
+10:35:26.691 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+10:35:28.003 [main] ERROR com.intuit.karate - src/test/java/dex/feature/postEnrollmentService.feature:8
+* def getRefId = java.type("java.time.localdatetime").now()
+>>>> js failed:
+01: java.type("java.time.localdatetime").now()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: (intermediate value).type is not a function
+- <js>.:program(Unnamed:1)
+
+src/test/java/dex/feature/postEnrollmentService.feature:8
+10:35:29.104 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+10:56:00.963 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:56:00.974 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634914560968
+10:56:02.366 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211022105602 
+10:56:02.863 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211022105602</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+10:56:03.059 [main] DEBUG com.intuit.karate - response time in milliseconds: 188
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 22 Oct 2021 14:56:03 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+10:56:03.063 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+10:56:03.065 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+10:56:04.036 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+11:00:45.498 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:00:45.512 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634914845504
+11:00:45.555 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+11:00:46.923 [main] ERROR com.intuit.karate - src/test/java/dex/feature/postEnrollmentService.feature:9
+* def ref_id = getDate()
+>>>> js failed:
+01: getDate()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: 20211022110046 is not a function
+- <js>.:program(Unnamed:1)
+
+src/test/java/dex/feature/postEnrollmentService.feature:9
+11:00:47.864 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+11:04:22.483 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:04:22.496 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634915062489
+11:04:22.537 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+11:04:23.996 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211022110423 
+11:04:24.555 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211022110423</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+11:04:24.783 [main] DEBUG com.intuit.karate - response time in milliseconds: 220
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 22 Oct 2021 15:04:24 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+11:04:24.787 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+11:04:24.789 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+11:04:25.776 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentService.feature
+08:14:56.790 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:14:56.803 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635336896796
+08:14:56.860 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+08:14:58.666 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211027081458 
+08:14:59.393 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211027081458</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+08:14:59.625 [main] DEBUG com.intuit.karate - response time in milliseconds: 223
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 12:14:59 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+08:14:59.629 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+08:14:59.631 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+08:15:00.900 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollment.feature
+08:18:12.305 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:18:12.317 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635337092311
+08:18:12.356 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 25 - ^Validate get customer details for given Claim ID \: .*$
+08:18:14.378 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211022110423</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+08:18:14.604 [main] DEBUG com.intuit.karate - response time in milliseconds: 218
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 12:18:14 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+08:18:14.615 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+08:18:14.618 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+08:18:15.654 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentServiceDuplicateStatus.feature
+08:20:05.526 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:20:05.536 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635337205530
+08:20:05.574 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 25 - ^Validate get customer details for given Claim ID \: .*$
+08:20:07.550 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5182
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570:20</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+08:20:08.276 [main] DEBUG com.intuit.karate - response time in milliseconds: 718
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 12:20:08 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+08:20:08.287 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+08:20:08.290 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+08:20:09.329 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentServiceDuplicateStatus.feature
+08:21:39.822 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:21:39.835 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635337299828
+08:21:39.877 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 25 - ^Validate get customer details for given Claim ID \: .*$
+08:21:41.971 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5182
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570:20</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+08:21:42.189 [main] DEBUG com.intuit.karate - response time in milliseconds: 210
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 12:21:42 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+08:21:42.201 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+08:21:42.204 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+08:21:43.202 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentServiceDuplicateStatus.feature
+08:23:05.914 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:23:05.927 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635337385920
+08:23:05.976 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get customer details for given Claim ID \: .*$
+08:23:07.601 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211027082307 
+08:23:08.170 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211027082307</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+08:23:08.356 [main] DEBUG com.intuit.karate - response time in milliseconds: 176
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 12:23:08 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+08:23:08.361 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+08:23:08.363 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+08:23:09.419 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollment.feature
+08:26:22.544 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:26:22.556 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635337582550
+08:26:22.593 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate post enrollment service with duplicate status for given master policy number \: .*$
+08:26:23.960 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211027082623 
+08:26:24.512 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211027082623</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+08:26:24.876 [main] DEBUG com.intuit.karate - response time in milliseconds: 356
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 12:26:24 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+08:26:24.880 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+08:26:24.882 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+08:26:25.867 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentServiceInvalidCoverageType.feature
+08:27:40.123 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:27:40.135 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635337660128
+08:27:40.177 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 25 - ^Validate post enrollment service with duplicate status for given master policy number \: .*$
+08:27:42.058 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5182
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570:19</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+08:27:42.270 [main] DEBUG com.intuit.karate - response time in milliseconds: 205
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 12:27:42 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+08:27:42.281 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+08:27:42.284 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+08:27:43.224 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentServiceDuplicateStatus.feature
+09:47:25.695 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:47:25.737 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635342445700
+09:47:27.577 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211027094727 
+09:47:28.063 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211027094727</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+09:47:28.410 [main] DEBUG com.intuit.karate - response time in milliseconds: 341
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 13:47:28 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+09:47:28.415 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+09:47:28.417 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+09:47:29.428 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (0 remaining) classpath:dex/feature/postEnrollment.feature
+09:47:29.468 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5182
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570:19</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+09:47:29.563 [main] DEBUG com.intuit.karate - response time in milliseconds: 94
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 13:47:29 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+09:47:29.565 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+09:47:29.566 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+09:47:29.700 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (0 remaining) classpath:dex/feature/postEnrollmentServiceDuplicateStatus.feature
+09:47:29.732 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211027094729 
+09:47:29.741 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211027094729</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+09:47:29.825 [main] DEBUG com.intuit.karate - response time in milliseconds: 82
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 13:47:30 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+09:47:29.827 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+09:47:29.828 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+09:47:30.070 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:dex/feature/postEnrollmentServiceInvalidCoverageType.feature
+09:47:30.077 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+10:35:12.346 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:35:12.358 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635345312353
+10:35:12.403 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate post enrollment service for given master policy number \: .*$
+10:35:13.910 [main] INFO  com.intuit.karate - [print] =====Reference Id is======: 20211027103513 
+10:35:14.503 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211027103513</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+10:35:14.789 [main] DEBUG com.intuit.karate - response time in milliseconds: 278
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 14:35:14 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+10:35:14.792 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+10:35:14.794 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+10:35:15.756 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollment.feature
+10:35:47.866 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:35:47.888 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1635345347875
+10:35:47.935 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 25 - ^Validate post enrollment service with duplicate status for given master policy number \: .*$
+10:35:49.842 [main] DEBUG com.intuit.karate - request:
+1 > POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 > Authorization: Basic cWE6cWE=
+1 > Content-Type: application/xml; charset=UTF-8
+1 > X-Correlation-Id: 123456
+1 > Content-Length: 5181
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+<EnrollmentCensusRequest>
+    <fileMetaData>
+        <masterPolicyNumber>MP0000783678</masterPolicyNumber>
+        <participantCount>1</participantCount>
+        <timestamp>2021-04-16T00:00:01</timestamp>
+        <fileIdentifier>None</fileIdentifier>
+    </fileMetaData>
+    <enrollmentCensusRecords>
+        <referenceID>20211027103513</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_3</coverageCd>
+                <planCd>plan_3</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>Test</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                        <locationId>001</locationId>
+                    </employment>
+                    <classificationGroup>
+                        <code>001</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 1</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-00-0010</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+    <enrollmentCensusRecords>
+        <referenceID>MP0001042570::5</referenceID>
+        <certificate>
+            <effectiveDt>2021-09-01T00:00:00</effectiveDt>
+            <coverages>
+                <participants>
+                    <personOID>1</personOID>
+                    <roleName>PRIMARY_P</roleName>
+                    <relationshipToInsured>SELF</relationshipToInsured>
+                </participants>
+                <memberPaymentModeCd>12</memberPaymentModeCd>
+                <coverageCd>accident_1</coverageCd>
+                <planCd>plan_1</planCd>
+                <coverageTierCd>
+                    <tiersType>EEF</tiersType>
+                </coverageTierCd>
+                <enrollmentDt>2021-01-01T00:00:00</enrollmentDt>
+            </coverages>
+            <primaryParticipant>
+                <personOID>1</personOID>
+                <relationship>
+                    <employment>
+                        <employeeId>1</employeeId>
+                        <employmentStatus>ACT</employmentStatus>
+                        <jobTitle>1231234567899876543212345678909876543212345677889056896534232345677654335678</jobTitle>
+                        <originalHireDt>2000-01-01T00:00:00</originalHireDt>
+                        <payrollFreq>BIWEEKLY</payrollFreq>
+                        <salaryAmt>10000.00</salaryAmt>
+                    </employment>
+                    <classificationGroup>
+                        <code>1</code>
+                    </classificationGroup>
+                </relationship>
+            </primaryParticipant>
+            <enrollmentType>ANNUAL</enrollmentType>
+        </certificate>
+        <allParticipants>
+            <oid>1</oid>
+            <firstName>Person 5</firstName>
+            <lastName>Test</lastName>
+            <middleName/>
+            <maritalStatusCd>M</maritalStatusCd>
+            <gender>MALE</gender>
+            <dob>1958-01-01T00:00:00</dob>
+            <taxId>000-22-0009</taxId>
+            <email/>
+            <addresses>
+                <addressType>residence</addressType>
+                <addressLine1>asd</addressLine1>
+                <addressLine2> </addressLine2>
+                <zipCode>11111</zipCode>
+                <city>asd</city>
+                <state>CO</state>
+                <country>US</country>
+            </addresses>
+        </allParticipants>
+    </enrollmentCensusRecords>
+</EnrollmentCensusRequest>
+
+10:35:50.053 [main] DEBUG com.intuit.karate - response time in milliseconds: 203
+1 < 200
+1 < Content-Language: en
+1 < Date: Wed, 27 Oct 2021 14:35:50 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"date":null,"records":null,"participantCount":null,"policyNumber":"MP0000783678","statusMessage":null}
+10:35:50.063 [main] INFO  com.intuit.karate - [print] {
+  "date": null,
+  "records": null,
+  "participantCount": null,
+  "policyNumber": "MP0000783678",
+  "statusMessage": null
+}
+ 
+10:35:50.065 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+10:35:50.971 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/dex/feature/postEnrollmentServiceDuplicateStatus.feature
