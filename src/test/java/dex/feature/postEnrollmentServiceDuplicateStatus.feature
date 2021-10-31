@@ -22,4 +22,4 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
     * match response.policyNumber == '<Policy_number>'
     Examples:
       | Policy_number | ref_id       |
-      | MP0000783678  |20211027103513|
+      | MP0000783678  |20211029115934|

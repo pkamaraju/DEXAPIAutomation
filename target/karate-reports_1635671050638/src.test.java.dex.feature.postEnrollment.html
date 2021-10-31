@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.dex.feature.postEnrollment</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-10-31 05:01:44 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:27]"><span>[1.1:27]</span> <span>Validate post enrollment service for given master policy number : MP0000783678</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:52]"><span>[2.1:52]</span> <span>Validate get master policy details for given Policy number : MP0000783678</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/dex/feature/postEnrollment.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Posting enrollment details through POST call in wfl-claims-rs Core Services</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:27]</span>
+                <span class="scenario-name">Validate post enrollment service for given master policy number : MP0000783678</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1053</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">106</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req_headers = {Content-Type: &#39;application/xml&#39;, X-Correlation-Id: &#39;123456&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">62</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload1 = read(&#39;classpath:dex/data/enrollmentService.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getDate = karate.read(&#39;getCurrentTime.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ref_id = getDate()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=====Reference Id is======:&#39;, ref_id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">05:01:42.612 [print] =====Reference Id is======: 20211031050142 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload1 /EnrollmentCensusRequest/fileMetaData/masterPolicyNumber = &#39;MP0000783678&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/referenceID = ref_id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request payload1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>headers req_headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">772</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.19">05:01:43.164 request:
+1 &gt; POST http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/deploy/
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Content-Type: application/xml; charset=UTF-8
+1 &gt; X-Correlation-Id: 123456
+1 &gt; Content-Length: 5201
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;EnrollmentCensusRequest&gt;
+    &lt;fileMetaData&gt;
+        &lt;masterPolicyNumber&gt;MP0000783678&lt;/masterPolicyNumber&gt;
+        &lt;participantCount&gt;1&lt;/participantCount&gt;
+        &lt;timestamp&gt;2021-04-16T00:00:01&lt;/timestamp&gt;
+        &lt;fileIdentifier&gt;None&lt;/fileIdentifier&gt;
+    &lt;/fileMetaData&gt;
+    &lt;enrollmentCensusRecords&gt;
+        &lt;referenceID&gt;20211031050142&lt;/referenceID&gt;
+        &lt;certificate&gt;
+            &lt;effectiveDt&gt;2021-09-01T00:00:00&lt;/effectiveDt&gt;
+            &lt;coverages&gt;
+                &lt;participants&gt;
+                    &lt;personOID&gt;1&lt;/personOID&gt;
+                    &lt;roleName&gt;PRIMARY_P&lt;/roleName&gt;
+                    &lt;relationshipToInsured&gt;SELF&lt;/relationshipToInsured&gt;
+                &lt;/participants&gt;
+                &lt;memberPaymentModeCd&gt;12&lt;/memberPaymentModeCd&gt;
+                &lt;coverageCd&gt;accident_3&lt;/coverageCd&gt;
+                &lt;planCd&gt;plan_3&lt;/planCd&gt;
+                &lt;coverageTierCd&gt;
+                    &lt;tiersType&gt;EEF&lt;/tiersType&gt;
+                &lt;/coverageTierCd&gt;
+                &lt;enrollmentDt&gt;2021-01-01T00:00:00&lt;/enrollmentDt&gt;
+            &lt;/coverages&gt;
+            &lt;primaryParticipant&gt;
+                &lt;personOID&gt;1&lt;/personOID&gt;
+                &lt;relationship&gt;
+                    &lt;employment&gt;
+                        &lt;employeeId&gt;1&lt;/employeeId&gt;
+                        &lt;employmentStatus&gt;ACT&lt;/employmentStatus&gt;
+                        &lt;jobTitle&gt;Test&lt;/jobTitle&gt;
+                        &lt;originalHireDt&gt;2000-01-01T00:00:00&lt;/originalHireDt&gt;
+                        &lt;payrollFreq&gt;BIWEEKLY&lt;/payrollFreq&gt;
+                        &lt;salaryAmt&gt;10000.00&lt;/salaryAmt&gt;
+                        &lt;locationId&gt;001&lt;/locationId&gt;
+                    &lt;/employment&gt;
+                    &lt;classificationGroup&gt;
+                        &lt;code&gt;001&lt;/code&gt;
+                    &lt;/classificationGroup&gt;
+                &lt;/relationship&gt;
+            &lt;/primaryParticipant&gt;
+            &lt;enrollmentType&gt;ANNUAL&lt;/enrollmentType&gt;
+        &lt;/certificate&gt;
+        &lt;allParticipants&gt;
+            &lt;oid&gt;1&lt;/oid&gt;
+            &lt;firstName&gt;FN_APIAutomation&lt;/firstName&gt;
+            &lt;lastName&gt;LN_APIAutomation&lt;/lastName&gt;
+            &lt;middleName/&gt;
+            &lt;maritalStatusCd&gt;M&lt;/maritalStatusCd&gt;
+            &lt;gender&gt;MALE&lt;/gender&gt;
+            &lt;dob&gt;1958-01-01T00:00:00&lt;/dob&gt;
+            &lt;taxId&gt;000-00-0010&lt;/taxId&gt;
+            &lt;email/&gt;
+            &lt;addresses&gt;
+                &lt;addressType&gt;residence&lt;/addressType&gt;
+                &lt;addressLine1&gt;asd&lt;/addressLine1&gt;
+                &lt;addressLine2&gt; &lt;/addressLine2&gt;
+                &lt;zipCode&gt;11111&lt;/zipCode&gt;
+                &lt;city&gt;asd&lt;/city&gt;
+                &lt;state&gt;CO&lt;/state&gt;
+                &lt;country&gt;US&lt;/country&gt;
+            &lt;/addresses&gt;
+        &lt;/allParticipants&gt;
+    &lt;/enrollmentCensusRecords&gt;
+    &lt;enrollmentCensusRecords&gt;
+        &lt;referenceID&gt;MP0001042570::5&lt;/referenceID&gt;
+        &lt;certificate&gt;
+            &lt;effectiveDt&gt;2021-09-01T00:00:00&lt;/effectiveDt&gt;
+            &lt;coverages&gt;
+                &lt;participants&gt;
+                    &lt;personOID&gt;1&lt;/personOID&gt;
+                    &lt;roleName&gt;PRIMARY_P&lt;/roleName&gt;
+                    &lt;relationshipToInsured&gt;SELF&lt;/relationshipToInsured&gt;
+                &lt;/participants&gt;
+                &lt;memberPaymentModeCd&gt;12&lt;/memberPaymentModeCd&gt;
+                &lt;coverageCd&gt;accident_1&lt;/coverageCd&gt;
+                &lt;planCd&gt;plan_1&lt;/planCd&gt;
+                &lt;coverageTierCd&gt;
+                    &lt;tiersType&gt;EEF&lt;/tiersType&gt;
+                &lt;/coverageTierCd&gt;
+                &lt;enrollmentDt&gt;2021-01-01T00:00:00&lt;/enrollmentDt&gt;
+            &lt;/coverages&gt;
+            &lt;primaryParticipant&gt;
+                &lt;personOID&gt;1&lt;/personOID&gt;
+                &lt;relationship&gt;
+                    &lt;employment&gt;
+                        &lt;employeeId&gt;1&lt;/employeeId&gt;
+                        &lt;employmentStatus&gt;ACT&lt;/employmentStatus&gt;
+                        &lt;jobTitle&gt;1231234567899876543212345678909876543212345677889056896534232345677654335678&lt;/jobTitle&gt;
+                        &lt;originalHireDt&gt;2000-01-01T00:00:00&lt;/originalHireDt&gt;
+                        &lt;payrollFreq&gt;BIWEEKLY&lt;/payrollFreq&gt;
+                        &lt;salaryAmt&gt;10000.00&lt;/salaryAmt&gt;
+                    &lt;/employment&gt;
+                    &lt;classificationGroup&gt;
+                        &lt;code&gt;1&lt;/code&gt;
+                    &lt;/classificationGroup&gt;
+                &lt;/relationship&gt;
+            &lt;/primaryParticipant&gt;
+            &lt;enrollmentType&gt;ANNUAL&lt;/enrollmentType&gt;
+        &lt;/certificate&gt;
+        &lt;allParticipants&gt;
+            &lt;oid&gt;1&lt;/oid&gt;
+            &lt;firstName&gt;Person 5&lt;/firstName&gt;
+            &lt;lastName&gt;Test&lt;/lastName&gt;
+            &lt;middleName/&gt;
+            &lt;maritalStatusCd&gt;M&lt;/maritalStatusCd&gt;
+            &lt;gender&gt;MALE&lt;/gender&gt;
+            &lt;dob&gt;1958-01-01T00:00:00&lt;/dob&gt;
+            &lt;taxId&gt;000-22-0009&lt;/taxId&gt;
+            &lt;email/&gt;
+            &lt;addresses&gt;
+                &lt;addressType&gt;residence&lt;/addressType&gt;
+                &lt;addressLine1&gt;asd&lt;/addressLine1&gt;
+                &lt;addressLine2&gt; &lt;/addressLine2&gt;
+                &lt;zipCode&gt;11111&lt;/zipCode&gt;
+                &lt;city&gt;asd&lt;/city&gt;
+                &lt;state&gt;CO&lt;/state&gt;
+                &lt;country&gt;US&lt;/country&gt;
+            &lt;/addresses&gt;
+        &lt;/allParticipants&gt;
+    &lt;/enrollmentCensusRecords&gt;
+&lt;/EnrollmentCensusRequest&gt;
+
+05:01:43.419 response time in milliseconds: 247
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Sun, 31 Oct 2021 09:01:43 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;date&quot;:null,&quot;records&quot;:null,&quot;participantCount&quot;:null,&quot;policyNumber&quot;:&quot;MP0000783678&quot;,&quot;statusMessage&quot;:null}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.21">05:01:43.423 [print] {
+  &quot;date&quot;: null,
+  &quot;records&quot;: null,
+  &quot;participantCount&quot;: null,
+  &quot;policyNumber&quot;: &quot;MP0000783678&quot;,
+  &quot;statusMessage&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.23">05:01:43.425 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0000783678&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:52]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:52]</span>
+                <span class="scenario-name">Validate get master policy details for given Policy number : MP0000783678</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>693</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:52]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req_headers = {Content-Type: &#39;application/xml&#39;, X-Correlation-Id: &#39;123456&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def payload1 = read(&#39;classpath:dex/data/enrollmentService.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def getDate = karate.read(&#39;getCurrentTime.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ref_id = getDate()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:52]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=====Reference Id is======:&#39;, ref_id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">05:01:43.467 [print] =====Reference Id is======: 20211031050143 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-enrollment-rs/v1/enrollment/MP0000783678/status&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">625</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.32">05:01:43.473 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/status
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+05:01:44.093 response time in milliseconds: 617
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Sun, 31 Oct 2021 09:01:44 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;date&quot;:&quot;2021-10-31T00:00:00Z&quot;,&quot;records&quot;:[{&quot;referenceId&quot;:&quot;MP0001039495::122-76-3674::2021-01-27T18:01:47&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR004&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001039495::122-76-3674::2021-01-27T18:01:48&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:12::&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570::5&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;Test123:12::&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;MP_Test0731:12::&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:19&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:20&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;87d01005-7b67-4789-8a55-b7dc60a7b84d&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211022105602&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211022110423&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027081458&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027082307&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027082623&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211027094727&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027094729&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211027103513&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091043&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091101&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091235&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091609&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091714&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091956&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092351&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092719&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092759&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094702&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094809&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094850&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095049&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095228&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095312&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095410&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095814&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028100041&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029011209&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029013222&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029013309&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029021230&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029093503&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029094658&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029095507&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029095903&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029100243&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115450&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115558&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115934&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031044843&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031044937&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045032&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045149&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045243&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045405&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045741&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045901&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050023&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;}],&quot;participantCount&quot;:1,&quot;policyNumber&quot;:&quot;MP0000783678&quot;,&quot;statusMessage&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.34">05:01:44.098 [print] {
+  &quot;date&quot;: &quot;2021-10-31T00:00:00Z&quot;,
+  &quot;records&quot;: [
+    {
+      &quot;referenceId&quot;: &quot;MP0001039495::122-76-3674::2021-01-27T18:01:47&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR004&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001039495::122-76-3674::2021-01-27T18:01:48&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:12::&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570::5&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;Test123:12::&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP_Test0731:12::&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:19&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:20&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;87d01005-7b67-4789-8a55-b7dc60a7b84d&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211022105602&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211022110423&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027081458&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027082307&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027082623&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027094727&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027094729&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027103513&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091043&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091101&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091235&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091609&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091714&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091956&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092351&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092719&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092759&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094702&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094809&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094850&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095049&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095228&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095312&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095410&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095814&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028100041&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029011209&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029013222&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029013309&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029021230&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029093503&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029094658&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029095507&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029095903&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029100243&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115450&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115558&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115934&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031044843&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031044937&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045032&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045149&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045243&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045405&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045741&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045901&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050023&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    }
+  ],
+  &quot;participantCount&quot;: 1,
+  &quot;policyNumber&quot;: &quot;MP0000783678&quot;,
+  &quot;statusMessage&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = response.records</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def myFun =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.36">function(arg) {
+ for(i=0; i&lt;arg.length; i++){
+   if(arg[i].referenceId == 20211031044937){
+       return arg[i]
+       }
+   }
+ }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def numberOfrecords = call myFun data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print  numberOfrecords</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.47">05:01:44.142 [print] {
+  &quot;referenceId&quot;: &quot;20211031044937&quot;,
+  &quot;statusMessage&quot;: [
+  ],
+  &quot;status&quot;: &quot;Passed&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.48">05:01:44.143 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0000783678&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

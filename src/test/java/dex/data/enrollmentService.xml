@@ -44,8 +44,8 @@
         </certificate>
         <allParticipants>
             <oid>1</oid>
-            <firstName>Person 1</firstName>
-            <lastName>Test</lastName>
+            <firstName>FN_APIAutomation</firstName>
+            <lastName>LN_APIAutomation</lastName>
             <middleName />
             <maritalStatusCd>M</maritalStatusCd>
             <gender>MALE</gender>
