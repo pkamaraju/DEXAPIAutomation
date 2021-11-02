@@ -12,6 +12,8 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
   @reg
   Scenario Outline: Validate post enrollment service with duplicate status for given master policy number : <Policy_number>
     * set payload1 /EnrollmentCensusRequest/fileMetaData/masterPolicyNumber = '<Policy_number>'
+    * set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/allParticipants/firstName = ref_id
+    * set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/allParticipants/lastName = ref_id
     * set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/referenceID = ref_id
     Given request payload1
     And path 'policy-group-enrollment-rs/v1/enrollment/<Policy_number>/deploy/'
@@ -20,6 +22,29 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
     Then status 200
     Then print response
      # * match response == '#array'
+    * print '=========Validating field values in response================= :'
+    * match response.policyNumber == '<Policy_number>'
+    * match response.policyNumber == '<Policy_number>'
+    * def sleep = function(millis){ java.lang.Thread.sleep(millis) }
+    * sleep(15000)
+    * header Authorization = call read('basic-auth.js')
+    Given path 'policy-group-enrollment-rs/v1/enrollment/<Policy_number>/status'
+    And method GET
+    When status 200
+    Then print response
+    * def data = response.records
+    * def myFun =
+    """
+    function(arg) {
+     for(i=0; i<arg.length; i++){
+       if(arg[i].referenceId == ref_id){
+           return arg[i]
+           }
+       }
+     }
+    """
+    * def numberOfrecords = call myFun data
+    * print  numberOfrecords
     * print '=========Validating field values in response================= :'
     * match response.policyNumber == '<Policy_number>'
     Examples:

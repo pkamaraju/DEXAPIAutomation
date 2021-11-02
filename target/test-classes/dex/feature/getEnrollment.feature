@@ -1,9 +1,9 @@
-Feature: Posting enrollment details through POST call in wfl-claims-rs Core Services
+Feature: Get enrollment details through POST call in wfl-claims-rs Core Services
 
  Background:
   * url baseUrl
   * header Authorization = call read('basic-auth.js')
-  
+
  @reg
  Scenario Outline: Validate get master policy details for given Policy number : <Policy_number>
   Given path 'policy-group-enrollment-rs/v1/enrollment/<Policy_number>/status'

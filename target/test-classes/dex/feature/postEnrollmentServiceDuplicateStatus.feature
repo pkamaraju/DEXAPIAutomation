@@ -20,6 +20,7 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
      # * match response == '#array'
     * print '=========Validating field values in response================= :'
     * match response.policyNumber == '<Policy_number>'
+
     Examples:
       | Policy_number | ref_id       |
-      | MP0000783678  |20211029115934|
+      | MP0000783678  |20211101100845|

@@ -12,6 +12,8 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
   @reg
   Scenario Outline: Validate post enrollment service for given master policy number : <Policy_number>
     * set payload1 /EnrollmentCensusRequest/fileMetaData/masterPolicyNumber = '<Policy_number>'
+    * set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/allParticipants/firstName = ref_id
+    * set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/allParticipants/lastName = ref_id
     * set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/referenceID = ref_id
     Given request payload1
     And path 'policy-group-enrollment-rs/v1/enrollment/<Policy_number>/deploy/'
@@ -27,4 +29,3 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
       | Policy_number |
       | MP0000783678  |
 
-  
