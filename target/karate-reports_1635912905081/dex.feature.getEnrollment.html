@@ -1,0 +1,2378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>dex.feature.getEnrollment</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-11-02 11:55:04 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:30]"><span>[1.1:30]</span> <span>Validate get master policy details for given Policy number : MP0000783678</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:31]"><span>[1.2:31]</span> <span>Validate get master policy details for given Policy number : MP0000783678</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">dex/feature/getEnrollment.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get enrollment details through POST call in wfl-claims-rs Core Services</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:30]</span>
+                <span class="scenario-name">Validate get master policy details for given Policy number : MP0000783678</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2449</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">56</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-enrollment-rs/v1/enrollment/MP0000783678/status&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2258</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">23:55:01.075 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/status
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:55:02.988 response time in milliseconds: 1858
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Wed, 03 Nov 2021 03:55:03 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;date&quot;:&quot;2021-11-03T00:00:00Z&quot;,&quot;records&quot;:[{&quot;referenceId&quot;:&quot;MP0001039495::122-76-3674::2021-01-27T18:01:47&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR004&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001039495::122-76-3674::2021-01-27T18:01:48&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:12::&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570::5&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;VCGB1001&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;locationId is required if the case profile contains at least one Billing Location&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;Test123:12::&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;MP_Test0731:12::&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:19&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:20&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;87d01005-7b67-4789-8a55-b7dc60a7b84d&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211022105602&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211022110423&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027081458&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027082307&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027082623&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211027094727&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027094729&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211027103513&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091043&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091101&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091235&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091609&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091714&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091956&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092351&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092719&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092759&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094702&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094809&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094850&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095049&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095228&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095312&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095410&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095814&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028100041&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029011209&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029013222&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029013309&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029021230&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029093503&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029094658&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029095507&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029095903&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029100243&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115450&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115558&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115934&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031044843&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031044937&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045032&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045149&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045243&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045405&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045741&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045901&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050023&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050142&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050412&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050722&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050854&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031051313&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031052026&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101061957&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062108&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062308&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062701&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062833&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065054&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065146&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065205&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065222&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101092818&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101092819&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211101093145&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101093146&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211101093532&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101094001&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;MP0000700526::1:11\/1\/2021:9:57&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;VCGB1001&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;locationId is required if the case profile contains at least one Billing Location&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211101100845&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR004&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211101101437&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102092236&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102092455&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102092547&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102092605&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102092725&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102093452&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102093634&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102093736&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102094648&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102095133&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102095225&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102100000&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100516&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100616&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100727&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100931&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102100932&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102104356&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102104410&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102104745&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102104758&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102235014&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102235036&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102235339&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;}],&quot;participantCount&quot;:1,&quot;policyNumber&quot;:&quot;MP0000783678&quot;,&quot;statusMessage&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">23:55:03.030 [print] {
+  &quot;date&quot;: &quot;2021-11-03T00:00:00Z&quot;,
+  &quot;records&quot;: [
+    {
+      &quot;referenceId&quot;: &quot;MP0001039495::122-76-3674::2021-01-27T18:01:47&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR004&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001039495::122-76-3674::2021-01-27T18:01:48&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:12::&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570::5&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;VCGB1001&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;locationId is required if the case profile contains at least one Billing Location&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;Test123:12::&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP_Test0731:12::&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:19&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:20&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;87d01005-7b67-4789-8a55-b7dc60a7b84d&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211022105602&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211022110423&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027081458&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027082307&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027082623&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027094727&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027094729&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027103513&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091043&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091101&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091235&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091609&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091714&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091956&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092351&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092719&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092759&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094702&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094809&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094850&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095049&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095228&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095312&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095410&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095814&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028100041&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029011209&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029013222&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029013309&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029021230&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029093503&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029094658&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029095507&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029095903&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029100243&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115450&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115558&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115934&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031044843&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031044937&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045032&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045149&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045243&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045405&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045741&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045901&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050023&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050142&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050412&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050722&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050854&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031051313&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031052026&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101061957&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062108&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062308&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062701&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062833&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065054&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065146&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065205&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065222&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101092818&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101092819&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101093145&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101093146&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101093532&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101094001&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0000700526::1:11/1/2021:9:57&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;VCGB1001&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;locationId is required if the case profile contains at least one Billing Location&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101100845&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR004&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101101437&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092236&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092455&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092547&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092605&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092725&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102093452&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102093634&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102093736&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102094648&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102095133&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102095225&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100000&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100516&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100616&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100727&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100931&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100932&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104356&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104410&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104745&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104758&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102235014&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102235036&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102235339&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    }
+  ],
+  &quot;participantCount&quot;: 1,
+  &quot;policyNumber&quot;: &quot;MP0000783678&quot;,
+  &quot;statusMessage&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = response.records</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def myFun =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.14">function(arg) {
+ for(i=0; i&lt;arg.length; i++){
+   if(arg[i].referenceId == 20211029013309){
+       return arg[i]
+       }
+   }
+ }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def numberOfrecords = call myFun data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print  numberOfrecords</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.25">23:55:03.086 [print] {
+  &quot;referenceId&quot;: &quot;20211029013309&quot;,
+  &quot;statusMessage&quot;: [
+  ],
+  &quot;status&quot;: &quot;Passed&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.26">23:55:03.090 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0000783678&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:31]</span>
+                <span class="scenario-name">Validate get master policy details for given Policy number : MP0000783678</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1268</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-enrollment-rs/v1/enrollment/MP0000783678/status&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1251</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.10">23:55:03.151 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-enrollment-rs/v1/enrollment/MP0000783678/status
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:55:04.397 response time in milliseconds: 1243
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Wed, 03 Nov 2021 03:55:04 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;date&quot;:&quot;2021-11-03T00:00:00Z&quot;,&quot;records&quot;:[{&quot;referenceId&quot;:&quot;MP0001039495::122-76-3674::2021-01-27T18:01:47&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR004&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001039495::122-76-3674::2021-01-27T18:01:48&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:12::&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570::5&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;VCGB1001&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;locationId is required if the case profile contains at least one Billing Location&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;Test123:12::&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;MP_Test0731:12::&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:19&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;MP0001042570:20&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;87d01005-7b67-4789-8a55-b7dc60a7b84d&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211022105602&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211022110423&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027081458&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027082307&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027082623&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211027094727&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211027094729&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211027103513&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091043&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091101&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091235&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091609&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091714&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028091956&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092351&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092719&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028092759&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094702&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094809&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028094850&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095049&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095228&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095312&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095410&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028095814&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211028100041&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029011209&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029013222&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029013309&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029021230&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029093503&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029094658&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029095507&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029095903&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029100243&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115450&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115558&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211029115934&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031044843&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031044937&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045032&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045149&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045243&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045405&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045741&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031045901&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050023&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050142&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050412&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050722&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031050854&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031051313&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211031052026&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101061957&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062108&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062308&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062701&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101062833&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065054&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065146&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065205&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101065222&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101092818&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101092819&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211101093145&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101093146&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211101093532&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211101094001&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;MP0000700526::1:11\/1\/2021:9:57&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;VCGB1001&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;locationId is required if the case profile contains at least one Billing Location&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211101100845&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR004&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211101101437&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Duplicate&quot;},{&quot;referenceId&quot;:&quot;20211102092236&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Duplicate&quot;},{&quot;referenceId&quot;:&quot;20211102092455&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102092547&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102092605&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102092725&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Processing&quot;},{&quot;referenceId&quot;:&quot;20211102093452&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102093634&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102093736&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102094648&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102095133&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102095225&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102100000&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100516&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100616&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100727&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102100931&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102100932&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102104356&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102104410&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102104745&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Completed&quot;},{&quot;referenceId&quot;:&quot;20211102104758&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102235014&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;},{&quot;referenceId&quot;:&quot;20211102235036&quot;,&quot;statusMessage&quot;:[{&quot;code&quot;:&quot;ENR008&quot;,&quot;level&quot;:&quot;ERROR&quot;,&quot;description&quot;:&quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,&quot;status&quot;:null,&quot;timestamp&quot;:null}],&quot;status&quot;:&quot;Failed&quot;},{&quot;referenceId&quot;:&quot;20211102235339&quot;,&quot;statusMessage&quot;:[],&quot;status&quot;:&quot;Passed&quot;}],&quot;participantCount&quot;:1,&quot;policyNumber&quot;:&quot;MP0000783678&quot;,&quot;statusMessage&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.12">23:55:04.404 [print] {
+  &quot;date&quot;: &quot;2021-11-03T00:00:00Z&quot;,
+  &quot;records&quot;: [
+    {
+      &quot;referenceId&quot;: &quot;MP0001039495::122-76-3674::2021-01-27T18:01:47&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR004&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001039495::122-76-3674::2021-01-27T18:01:48&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:12::&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570::5&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;VCGB1001&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;locationId is required if the case profile contains at least one Billing Location&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;Test123:12::&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP_Test0731:12::&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:19&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0001042570:20&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;87d01005-7b67-4789-8a55-b7dc60a7b84d&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211022105602&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211022110423&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027081458&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027082307&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027082623&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027094727&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027094729&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211027103513&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091043&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091101&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091235&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091609&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091714&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028091956&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092351&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092719&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028092759&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094702&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094809&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028094850&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095049&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095228&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095312&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095410&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028095814&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211028100041&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029011209&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029013222&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029013309&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029021230&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029093503&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029094658&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029095507&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029095903&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029100243&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115450&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115558&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211029115934&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031044843&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031044937&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045032&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045149&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045243&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045405&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045741&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031045901&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050023&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050142&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050412&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050722&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031050854&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031051313&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211031052026&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101061957&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062108&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062308&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062701&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101062833&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065054&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065146&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065205&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101065222&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101092818&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101092819&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101093145&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101093146&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101093532&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101094001&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;MP0000700526::1:11/1/2021:9:57&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;VCGB1001&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;locationId is required if the case profile contains at least one Billing Location&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101100845&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR004&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Certificate Policy or Endorsement transaction already issued for the record&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211101101437&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Duplicate&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092236&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Duplicate&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092455&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092547&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092605&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102092725&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Processing&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102093452&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102093634&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102093736&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102094648&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102095133&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102095225&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100000&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100516&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100616&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100727&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100931&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102100932&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104356&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104410&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104745&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Completed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102104758&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102235014&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102235036&quot;,
+      &quot;statusMessage&quot;: [
+        {
+          &quot;code&quot;: &quot;ENR008&quot;,
+          &quot;level&quot;: &quot;ERROR&quot;,
+          &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+          &quot;status&quot;: null,
+          &quot;timestamp&quot;: null
+        }
+      ],
+      &quot;status&quot;: &quot;Failed&quot;
+    },
+    {
+      &quot;referenceId&quot;: &quot;20211102235339&quot;,
+      &quot;statusMessage&quot;: [
+      ],
+      &quot;status&quot;: &quot;Passed&quot;
+    }
+  ],
+  &quot;participantCount&quot;: 1,
+  &quot;policyNumber&quot;: &quot;MP0000783678&quot;,
+  &quot;statusMessage&quot;: [
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def data = response.records</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def myFun =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.14">function(arg) {
+ for(i=0; i&lt;arg.length; i++){
+   if(arg[i].referenceId == 20211027082623){
+       return arg[i]
+       }
+   }
+ }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def numberOfrecords = call myFun data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print  numberOfrecords</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.25">23:55:04.413 [print] {
+  &quot;referenceId&quot;: &quot;20211027082623&quot;,
+  &quot;statusMessage&quot;: [
+    {
+      &quot;code&quot;: &quot;ENR008&quot;,
+      &quot;level&quot;: &quot;ERROR&quot;,
+      &quot;description&quot;: &quot;Coverage definition not found for enrollment record ACCIDENT_1 and plan plan_1&quot;,
+      &quot;status&quot;: null,
+      &quot;timestamp&quot;: null
+    }
+  ],
+  &quot;status&quot;: &quot;Failed&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.26">23:55:04.414 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0000783678&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

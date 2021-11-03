@@ -9,7 +9,7 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
     * def ref_id = getDate()
     * print '=====Reference Id is======:', ref_id
     #*  header Authorization = call read('basic-auth.js') { username: 'qa', password: 'qa' }
-  @reg
+  @smoke
   Scenario Outline: Validate post enrollment service for given master policy number : <Policy_number>
     * set payload1 /EnrollmentCensusRequest/fileMetaData/masterPolicyNumber = '<Policy_number>'
     * set payload1 /EnrollmentCensusRequest/enrollmentCensusRecords/allParticipants/firstName = ref_id
