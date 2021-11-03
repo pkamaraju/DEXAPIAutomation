@@ -26,7 +26,7 @@ Feature: Posting enrollment details through POST call in wfl-claims-rs Core Serv
     * match response.policyNumber == '<Policy_number>'
     * match response.policyNumber == '<Policy_number>'
     * def sleep = function(millis){ java.lang.Thread.sleep(millis) }
-    * sleep(15000)
+    * sleep(20000)
     * header Authorization = call read('basic-auth.js')
     Given path 'policy-group-enrollment-rs/v1/enrollment/<Policy_number>/status'
     And method GET
